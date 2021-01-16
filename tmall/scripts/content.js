@@ -71,7 +71,7 @@ var dDate = new Date();  //10点和20点开抢
 if( dDate.getHours() < 10 ){
     dDate.setHours(9,59,59.2);
 }else{
-    dDate.setHours(17,59,59.2);
+    dDate.setHours(19,59,59.3);
 }
 
 //dDate.setSeconds( dDate.getSeconds() + 10 );
@@ -92,7 +92,7 @@ function enterTimeCheckLoop(callback){
         callback && callback();
         console.log('时间到了！！！');
     }else{
-        setTimeout(function(){ enterTimeCheckLoop(callback);},400);
+        setTimeout(function(){ enterTimeCheckLoop(callback);},300);
 
         //console.log('--');
     }
